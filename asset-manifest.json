@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ContactBook/static/css/main.a1ce5229.css",
+    "main.js": "/ContactBook/static/js/main.4d7e2e07.js",
+    "index.html": "/ContactBook/index.html",
+    "main.a1ce5229.css.map": "/ContactBook/static/css/main.a1ce5229.css.map",
+    "main.4d7e2e07.js.map": "/ContactBook/static/js/main.4d7e2e07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1ce5229.css",
+    "static/js/main.4d7e2e07.js"
+  ]
+}
