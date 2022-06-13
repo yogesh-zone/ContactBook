@@ -29,7 +29,7 @@ const EditContact = (state) => {
             number
         }
         updatecontact(data);
-        history('/');
+        history('/ContactBook');
         toast.success("Contact updated succesfully")
 
 
@@ -42,7 +42,7 @@ const EditContact = (state) => {
                 <input className='border-2 border-gray-400 rounded-md w-[60%] focus:outline-none px-2 my-2 focus:ring-2 focus:ring-blue-200' type="email" name="email" value={email} placeholder='Email'onChange={e=> setEmail(e.target.value)}/>
                 <input className='border-2 border-gray-400 rounded-md w-[60%] focus:outline-none px-2 my-2 focus:ring-2 focus:ring-blue-200' type="number" name="number"value={number} placeholder='number'onChange={e=> setPhone(e.target.value)} />
                 <button type='submit' className='border-2 border-black bg-green-500 my-3 px-2 py-2 font-semibold text-white w-[40%] hover:bg-green-600 focus:bg-green-800'>Update Details</button>
-                <Link to='/' className='flex flex-col items-center border-2 px-2  border-black bg-red-600 my-3  py-2 font-semibold text-white w-[40%] hover:bg-red-500 focus:bg-red-800'>Cancle</Link>
+                <Link to='/ContactBook' className='flex flex-col items-center border-2 px-2  border-black bg-red-600 my-3  py-2 font-semibold text-white w-[40%] hover:bg-red-500 focus:bg-red-800'>Cancle</Link>
             </form>
         </div>
     )

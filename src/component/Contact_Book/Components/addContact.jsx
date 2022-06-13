@@ -33,7 +33,7 @@ const AddPost = (state) => {
       }
       addContact(data);
       toast.success("Contact Added Successfully!!")
-      history('/')
+      history('/ContactBook')
   } 
     
     
