@@ -15,13 +15,13 @@ const App = () => {
   return (
     <>
       <Provider store={store}>
-      <Router  basename={process.env.PUBLIC_URL}>
+      <Router  basename="/contactbook">
       <ToastContainer />
       <Navbar/> 
       <Routes>
-      <Route exact path='/ContactBook' element={<Home/> }></Route>
-      <Route  path="/ContactBook/add" element={<AddPost/>}/>
-      <Route exact path="/ContactBook/edit/:id" element={<EditContact/>}/>
+      <Route exact path='/' element={<Home/> }></Route>
+      <Route  path="/add" element={<AddPost/>}/>
+      <Route exact path="/edit/:id" element={<EditContact/>}/>
       </Routes>
       </Router>
       </Provider>
