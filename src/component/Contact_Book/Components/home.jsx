@@ -10,7 +10,7 @@ const Home = (state) => {
     <>
       <div className='flex pt-10 justify-between flex-col text-center'>
         <div className='font-bold text-4xl py-3 px-3'>Welcome to React Redux Contact App</div>
-        <Link to='/ContactBook/add' className='px-10'>
+        <Link to='/add' className='px-10'>
         <button className='text-black font-semibold mt-8 mb-3 px-2 py-1 border-2 border-black rounded-lg hover:text-white hover:bg-green-600'>Add Contact</button>
         </Link>
         </div>
@@ -34,7 +34,7 @@ const Home = (state) => {
                           <td className='px-10 font-semibold'>{key.email}</td>
                           <td className='px-10 font-semibold'> {key.number}</td>
                           <td className='flex text-center'>
-                            <Link to={`/ContactBook/edit/${key.id}`} className='flex flex-row  hover:text-green-400 uppercase font-semibold mx-auto my-2'>
+                            <Link to={`/edit/${key.id}`} className='flex flex-row  hover:text-green-400 uppercase font-semibold mx-auto my-2'>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
